@@ -1,0 +1,43 @@
+Computerni global "Git Hub" bilan ulash.
+
+1-Ulangan yoki ulanmaganlikini tekshirish.
+//git config --global --list.
+
+2-User nameni kiritish.
+//git config --global user.name "uaer nameni kiristing"
+
+3-Email pochtani kiritish.
+//git config --global user.email "shu yerga emailni kiriting @gmail.com"
+
+4-shaxsiy kalitni "Github" ga joylash.
+//ssh-keygen -t rsa -b 4096 -C " bu yerga email ingizni kiriting @gmail.com"
+
+keyin 1 "Enter" tugmasi bosiladi.
+yana bitta "Enter"tugmachasi bosiladi.
+bosilgandan keyin Quyidagicha jumla paydo bo'ladi.
+
+// "/c/Users/user/.ssh/id_rsa already exists.
+Overwrite (y/n)? " paydo bo'lgandan keyin "yes" yani y tugmachasi bosiladi.
+
+sizga ma'lumot chiqariladi so'ngra 
+"Your public key has been saved in /c/Users/user/.ssh/id_rsa.pub" shu qator topib olinib"
+"/c/Users/user/.ssh/id_rsa.pub" shu jumla nusxalab olinadi.
+
+keyin terminal boshidan $ belgisidan keyin cat deb yozib olinib nusxalangan matn joylanadi quyidagicha.
+$ cat/c/Users/user/.ssh/id_rsa.pub
+
+sizga ssh kalit tasab beradi so'ngra uni "Git hub" ga joylanadi. 
+
+ Githubgadan repository ko'chirib olish va repozitoryga yangi fayl yuklash Quyidagicha bajariladi.
+
+
+
+ Asosiysi
+echo "# desktopda ochilgan fail nomi" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Husanboy832/4-amaliy.git
+git push -u origin main
+
